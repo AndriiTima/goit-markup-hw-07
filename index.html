@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Webstudio</title>
@@ -58,6 +59,16 @@
             </li>
           </ul>
         </address>
+        <!--  Mobile style -->
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu-toggle-icon" width="32" height="22">
+            <use href="./images/icon.svg#charm-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -132,33 +143,51 @@
           </ul>
         </div>
       </section>
-      <!-- What are we doing -->
+      <!-- what are we doing -->
       <section class="section section-projects">
         <div class="container">
-          <h2 class="section-title">What are we doing</h2>
+          <h2 class="section-title">what are we doing</h2>
           <ul class="projects list">
             <li class="projects-item">
               <img
-                src="./images/img1_1.jpg"
+                class="all-img"
+                srcset="
+                  ./images/what-are/img-360_desc@1x-1.jpg 360w,
+                  ./images/what-are/img-720_desc@2x-1.jpg 720w
+                "
+                sizes="360px"
+                src="./images/what-are/img-360_desc@1x-1.jpg"
                 alt="desktop applications"
                 width="360"
-                class="all-img"
+                loading="lazy"
               />
             </li>
             <li class="projects-item">
               <img
-                src="./images/img2_1.jpg"
+                class="all-img"
+                srcset="
+                  ./images/what-are/img-360_desc@1x-2.jpg 360w,
+                  ./images/what-are/img-720_desc@2x-2.jpg 720w
+                "
+                sizes="360px"
+                loading="lazy"
+                src="./images/what-are/img-360_desc@1x-2.jpg"
                 alt="mobile applications"
                 width="360"
-                class="all-img"
               />
             </li>
             <li class="projects-item">
               <img
-                src="./images/img3_1.jpg"
-                alt="design solutions"
-                width="360"
                 class="all-img"
+                srcset="
+                  ./images/what-are/img-360_desc@1x-3.jpg 360w,
+                  ./images/what-are/img-720_desc@2x-3.jpg 720w
+                "
+                sizes="360px"
+                width="360"
+                src="./images/what-are/img-360_desc@1x-3.jpg"
+                alt="design solutions"
+                loading="lazy"
               />
             </li>
           </ul>
@@ -173,10 +202,16 @@
           <ul class="card list">
             <li class="card-item">
               <img
-                src="./images/img_1.jpg"
+                class="all-img"
+                srcset="
+                  ./images/our-team/img@1x_264.jpg 264w,
+                  ./images/our-team/img@2x_528.jpg 528w
+                "
+                sizes="(min-width: 1200px) 264px, (min-width: 768px) 264px, (min-width: 480px) 264px, 100vw"
+                loading="lazy"
+                src="./images/our-team/img@1x-1_264.jpg"
                 alt=" foto Mark Guerrero"
                 width="264"
-                class="all-img"
               />
               <div class="card-box">
                 <h3 class="title text-center">Mark Guerrero</h3>
@@ -215,10 +250,16 @@
             </li>
             <li class="card-item">
               <img
-                src="./images/img_2.jpg"
+                class="all-img"
+                srcset="
+                  ./images/our-team/img@1x-1_264.jpg 264w,
+                  ./images/our-team/img@2x-1_528.jpg 528w
+                "
+                sizes="(min-width: 1200px) 264px, (min-width: 768px) 264px, (min-width: 480px) 264px, 100vw"
+                loading="lazy"
+                src="./images/our-team/img@1x-1_264.jpg"
                 alt="foto Tom Ford"
                 width="264"
-                class="all-img"
               />
               <div class="card-box">
                 <h3 class="title text-center">Tom Ford</h3>
@@ -257,10 +298,16 @@
             </li>
             <li class="card-item">
               <img
-                src="./images/img_3.jpg"
+                class="all-img"
+                srcset="
+                  ./images/our-team/img@1x-2_264.jpg 264w,
+                  ./images/our-team/img@2x-2_528.jpg 528w
+                "
+                sizes="(min-width: 1200px) 264px, (min-width: 768px) 264px, (min-width: 480px) 264px, 100vw"
+                loading="lazy"
+                src="./images/our-team/img@1x-2_264.jpg"
                 alt="foto Camila Garcia"
                 width="264"
-                class="all-img"
               />
               <div class="card-box">
                 <h3 class="title text-center">Camila Garcia</h3>
@@ -299,10 +346,16 @@
             </li>
             <li class="card-item">
               <img
-                src="./images/img_4.jpg"
+                class="all-img"
+                srcset="
+                  ./images/our-team/img@1x-3_264.jpg 264w,
+                  ./images/our-team/img@2x-3_528.jpg 528w
+                "
+                sizes="(min-width: 1200px) 264px, (min-width: 768px) 264px, (min-width: 480px) 264px, 100vw"
+                loading="lazy"
+                src="./images/our-team/img@1x-3_264.jpg"
                 alt="foto Daniel Wilson"
                 width="264"
-                class="all-img"
               />
               <div class="card-box">
                 <h3 class="title text-center">Daniel Wilson</h3>
@@ -440,7 +493,7 @@
             </li>
           </ul>
         </div>
-        <!-- form-footer -->
+
         <div class="forma-footer">
           <p class="foter-media">Subscribe</p>
           <form name="cont-grup">
@@ -476,7 +529,7 @@
             <use href="./images/icon.svg#close-black"></use>
           </svg>
         </button>
-        <!-- start -->
+
         <form class="form" name="user-contacts">
           <p class="form-text">Leave your contacts and we will call you back</p>
 
@@ -523,9 +576,6 @@
             id="user-comment"
             placeholder="Text input"
           ></textarea>
-
-          <!-- checked -->
-
           <label class="forma-agreement">
             <input
               class="agreement-input visually-hidden"
@@ -552,7 +602,98 @@
         </form>
       </div>
     </div>
+    <!-- mobil menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="js-close-menu bnt-mobile-close">
+        <svg class="x-icon" width="8" height="8">
+          <use href="./images/icon.svg#close-black"></use>
+        </svg>
+      </button>
 
+      <ul class="mobile-menu list">
+        <li class="mobile-menu-item">
+          <a href="./index.html" class="link activ">Studio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="./portfolio.html" class="link">Portfolio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="" class="link">Contacts</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-contacts list">
+        <li class="mob-tel-item">
+          <a class="mobile-tel link" href="tel:">+11 (000) 111-11-11</a>
+        </li>
+        <li class="mob-mail-item">
+          <a class="mobile-email link" href="mailto:">info@devstudio.com</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-socials list">
+        <li class="media-item">
+          <a
+            class="footer-icon-link"
+            href="https://instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram icon"
+          >
+            <svg class="media-icon" width="24" height="24">
+              <use href="./images/icon.svg#instagram-2"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="media-item">
+          <a
+            class="footer-icon-link"
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Twitter icon"
+          >
+            <svg class="media-icon" width="24" height="24">
+              <use href="./images/icon.svg#twitter-1"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="media-item">
+          <a
+            class="footer-icon-link"
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook icon"
+          >
+            <svg class="media-icon" width="24" height="24">
+              <use href="./images/icon.svg#facebook-1"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="media-item">
+          <a
+            class="footer-icon-link"
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Linkedin icon"
+          >
+            <svg class="media-icon" width="24" height="24">
+              <use href="./images/icon.svg#linkedin-1"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
