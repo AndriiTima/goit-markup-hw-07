@@ -97,8 +97,6 @@ body {
   margin-right: auto;
   padding-left: 16px;
   padding-right: 16px;
-
-  outline: 2px solid red;
 }
 
 .wrap {
@@ -669,7 +667,6 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   gap: 72px 16px;
-  outline: 2px solid blue;
 }
 @media only screen and (min-width: 768px) {
   .customers-list {
@@ -1150,7 +1147,7 @@ body {
   overflow: auto;
 
   max-width: 392px;
-  /* min-height: 576px; */
+  min-height: 576px;
   padding: 24px;
 
   background-color: #fcfcfc;
